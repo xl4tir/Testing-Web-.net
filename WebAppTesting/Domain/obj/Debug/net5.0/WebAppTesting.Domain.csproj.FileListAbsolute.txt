@@ -1,0 +1,15 @@
+C:\Users\vladi\source\repos\WebAppTesting\Domain\bin\Debug\net5.0\WebAppTesting.Domain.deps.json
+C:\Users\vladi\source\repos\WebAppTesting\Domain\bin\Debug\net5.0\WebAppTesting.Domain.dll
+C:\Users\vladi\source\repos\WebAppTesting\Domain\bin\Debug\net5.0\ref\WebAppTesting.Domain.dll
+C:\Users\vladi\source\repos\WebAppTesting\Domain\bin\Debug\net5.0\WebAppTesting.Domain.pdb
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.csproj.AssemblyReference.cache
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.AssemblyInfo.cs
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.csproj.CoreCompileInputs.cache
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.dll
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\ref\WebAppTesting.Domain.dll
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.pdb
+C:\Users\vladi\source\repos\WebAppTesting\Domain\bin\Debug\net5.0\WebAppTesting.Domain.runtimeconfig.json
+C:\Users\vladi\source\repos\WebAppTesting\Domain\bin\Debug\net5.0\WebAppTesting.Domain.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\WebAppTesting\Domain\obj\Debug\net5.0\WebAppTesting.Domain.genruntimeconfig.cache

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Testing</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a asp-controller="Home" asp-action="Index" class="p-2 text-dark">Головна</a>
+            <a asp-controller="Testing" asp-action="GetTestings" class="p-2 text-dark">Тести</a>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Testing" asp-action="CreateTesting" class="p-2 text-dark">Створити</a>
+            }
+        </nav>
+
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="btn btn-outline-primary mr-2" asp-controller="Profile" asp-action="ProfileInfo">Кабінет</a>
+            <form method="post" asp-controller="Account" asp-action="Logout">
+                <button type="submit" class="btn btn-outline-danger mr-2">Вийти</button>
+            </form>
+        }
+
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <a class="btn btn-outline-success mr-2" asp-controller="Account" asp-action="Login">Авторизація</a>
+            <a class="btn btn-outline-primary mr-2" asp-controller="Account" asp-action="Register">Реєстрація</a>
+        }
+    </div>
+
+
+    <div class="container">
+        @RenderBody()
+
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <small class="d-block mb-3 text-muted">Copyright © 2022 - All rights reserved</small>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    @await RenderSectionAsync("pageScripts", required: false)
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@{
+ViewData["Title"] = "Home Page";
+}
+
+
+<h1 class="mb-5">Створити новий тест</h1>
+<form asp-controller="Testing" asp-action="CreateTesting" class="was-validated" >
+
+    <input  required class="form-control" type="text" placeholder="Назва тесту" name="name">
+    <div class="invalid-feedback ">Введіть назву тесту</div>
+
+    <button class="btn btn-success mt-3 mb-5" type="submit">Створити</button>
+</form>
+
+

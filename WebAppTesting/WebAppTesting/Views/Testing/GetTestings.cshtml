@@ -1,0 +1,42 @@
+﻿@model List<WebAppTesting.Domain.Entity.Testing>
+
+<h1 class="mb-5">Останні створені тести</h1>
+
+@{
+    ViewData["Title"] = "Home Page";
+
+    foreach (var testing in Model)
+    {
+        <div class="card text-center mb-3">
+            <div class="card-body">
+                <h4 class="card-title">Назва тесту - @testing.Name</h4>
+                <p class="card-text">
+                    Навчальний предмет тесту:<b> @testing.Subject.Name</b>
+                </p>
+                <p class="card-text">
+                    Рівень тесту:<b> @testing.Grade.Name</b>
+                </p>
+                <p class="card-text">
+                    Кількість проходжень:<b>@testing.NumberOfPasses </b>
+                </p>
+                <p class="card-text">
+                    Автор тесту:<b> @testing.User.Name</b>
+                </p>
+
+                <a asp-controller="Testing" asp-route-id="@testing.Id" asp-action="GetTesting" class="btn btn-primary">Переглянути</a>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <hr />
+                    <a asp-controller="Testing" asp-action="Index" class="btn btn-danger">Видалити</a>
+                    <a asp-controller="Testing" asp-action="Index" class="btn btn-info">Змінити</a>
+                }
+
+            </div>
+            <div class="card-footer text-muted">
+                Створено: @testing.Date
+            </div>
+        </div>
+
+    }
+}
